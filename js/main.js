@@ -7,8 +7,8 @@ about.addEventListener('click', () => {
   new WinBox({
     title: 'About Me',
     background: '#0037DA',
-    width: '400px',
-    height: '400px',
+    width: '500px',
+    height: '500px',
     top: 50,
     right: 50,
     bottom: 50,
