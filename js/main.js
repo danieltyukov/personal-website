@@ -1,43 +1,43 @@
-const about = document.querySelector("#about");
-const contact = document.querySelector("#contact");
-const contactMe = document.querySelector("#contact-me");
-const aboutMe = document.querySelector("#about-me");
+const about = document.querySelector('#about')
+const contact = document.querySelector('#contact')
+const aboutContent = document.querySelector('#about-content')
+const contactContent = document.querySelector('#contact-content')
 
-about.addEventListener("click", () => {
+about.addEventListener('click', () => {
   const aboutBox = new WinBox({
-    title: "About Me",
-    modal: true,
-    width: "500px",
-    height: "500px",
+    title: 'About Me',
+    // modal: true,
+    width: '400px',
+    height: '400px',
     top: 50,
+    right: 50,
+    bottom: 50,
     left: 50,
-    right: 50,
-    bottom: 50,
-    mount: aboutMe,
+    mount: aboutContent,
     onfocus: function () {
-      this.setBackground("#00aa00");
+      this.setBackground('#00aa00')
     },
     onblur: function () {
-      this.setBackground("#777");
+      this.setBackground('#777')
     },
-  });
-});
+  })
+})
 
-contact.addEventListener("click", () => {
+contact.addEventListener('click', () => {
   const contactBox = new WinBox({
-    title: "Conact Me",
-    width: "500",
-    height: "500",
+    title: 'Contact Me',
+    width: '400px',
+    height: '400px',
     top: 150,
-    left: 250,
     right: 50,
     bottom: 50,
-    mount: contactMe,
+    left: 250,
+    mount: contactContent,
     onfocus: function () {
-      this.setBackground("#00aa00");
+      this.setBackground('#00aa00')
     },
     onblur: function () {
-      this.setBackground("#777");
+      this.setBackground('#777')
     },
-  });
-});
+  })
+})
