@@ -4,9 +4,9 @@ const aboutContent = document.querySelector('#about-content')
 const contactContent = document.querySelector('#contact-content')
 
 about.addEventListener('click', () => {
-  const aboutBox = new WinBox({
+  new WinBox({
     title: 'About Me',
-    // modal: true,
+    background: '#0037DA',
     width: '400px',
     height: '400px',
     top: 50,
@@ -15,7 +15,7 @@ about.addEventListener('click', () => {
     left: 50,
     mount: aboutContent,
     onfocus: function () {
-      this.setBackground('#00aa00')
+      this.setBackground('#0037DA')
     },
     onblur: function () {
       this.setBackground('#777')
@@ -24,8 +24,9 @@ about.addEventListener('click', () => {
 })
 
 contact.addEventListener('click', () => {
-  const contactBox = new WinBox({
+  new WinBox({
     title: 'Contact Me',
+    background: '#0037DA',
     width: '400px',
     height: '400px',
     top: 150,
@@ -34,7 +35,7 @@ contact.addEventListener('click', () => {
     left: 250,
     mount: contactContent,
     onfocus: function () {
-      this.setBackground('#00aa00')
+      this.setBackground('#0037DA')
     },
     onblur: function () {
       this.setBackground('#777')
